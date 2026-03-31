@@ -30,3 +30,10 @@ docker-compose up --build
 ```bash
 Visit PgAdmin 4 @ http://localhost:5050
 ```
+
+## Running tests
+
+```bash
+playwright install
+pytest --cov=app --cov-report=term-missing --cov-report=html
+```
